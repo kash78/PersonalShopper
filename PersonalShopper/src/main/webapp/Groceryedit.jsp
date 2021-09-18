@@ -21,11 +21,12 @@ pageEncoding="UTF-8"%>
 <div class="container col-md-5">
 <div class="card">
 <div class="card-body">
-<caption>
-<h2>
+
 <c:if test="${items != null}">
 Edit Items
 </c:if>
+<caption>
+<h2>
 <c:if test="${items == null}">
 Edit New Items
 </c:if>
@@ -57,6 +58,7 @@ Edit New Items
 <fieldset class="form-group">
 <label>Stock</label> <input type="text" value="<c:out value='${items.stock}' />" class="form-control" name="Stock">
 </fieldset>
+<form>
 <button type="submit" class="items">Save</button>
 </form>
 </div>
